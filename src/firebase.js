@@ -1,0 +1,19 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDDiPXE03yGMH7cXq_NMPnRU-UL75JJt2M",
+  authDomain: "todo-react-b72e2.firebaseapp.com",
+  projectId: "todo-react-b72e2",
+  storageBucket: "todo-react-b72e2.appspot.com",
+  messagingSenderId: "254421221440",
+  appId: "1:254421221440:web:7696c7b90a7ffe86165fa5"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
